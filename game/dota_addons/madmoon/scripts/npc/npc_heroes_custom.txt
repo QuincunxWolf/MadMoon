@@ -1,0 +1,14 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	"npc_class_archer"
+	{
+		"override_hero"				"npc_dota_hero_windrunner"				// Hero to override
+		"Ability1"					"archer_arrow"							// Ability 1
+		"Ability2"					"archer_powershot"							// Ability 2
+		"Ability3"					"archer_backflip"
+		"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+	}
+}

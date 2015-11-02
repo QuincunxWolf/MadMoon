@@ -1,0 +1,90 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	//============================
+	// Archer: Arrow
+	//============================
+	"archer_arrow"
+	{
+		"ScriptFile"					"lua_abilities/archer/archer_arrow"
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"archer/archer_arrow"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"default_projectile_speed"		"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"default_projectile_width"		"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"default_projectile_distance"	"1000"
+			}
+		}
+	}
+	//============================
+	// Archer: Powershot
+	//============================
+	"archer_powershot"
+	{
+		"ScriptFile"					"lua_abilities/archer/archer_powershot"
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"archer/archer_powershot"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"projectile_speed"		"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"projectile_width"		"70"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"projectile_distance"	"1000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_damage"			"200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_charge_time"		"2.0"
+			}
+		}
+	}
+	"archer_backspin"
+	{
+		"ScriptFile"					"lua_abilities/archer/archer_backspin"
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"archer/archer_backspin"
+		"MaxLevel" 						"1"		
+	}
+	"archer_poison_arrow"
+	{
+		"ScriptFile"					"lua_abilities/archer/archer_poison_arrow"
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"archer/archer_poison_arrow"
+		"MaxLevel" 						"1"	
+	}
+}

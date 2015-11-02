@@ -1,0 +1,10 @@
+"DOTAAbilities"
+{
+	"item_ability_container"
+	{
+		"ID"					"2000"
+		"BaseClass"				"item_lua"
+		"AbilityTextureName"	"items/item_ability_container"
+		"ScriptFile"			"lua_items/item_ability_container"
+	}
+}
